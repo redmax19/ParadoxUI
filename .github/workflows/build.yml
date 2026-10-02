@@ -10,11 +10,11 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        target: [y2s,x1s]
+        target: [r8s,x1s]
 
     steps:
       - name: Checkout repo
-        uses: actions/checkout@v5
+        uses: actions/checkout@v7
         with:
           submodules: 'recursive'
 
